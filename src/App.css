@@ -1,0 +1,47 @@
+:root {
+  --indigo500-color: #6366f1;
+  --slate600-color: #475569;
+  --slae800-color: #1e293b;
+  --slate950-color: #020617;
+}
+
+@font-face {
+  font-family: "SF pro";
+  src: url("../src/dist/fonts/SFPRODISPLAYREGULAR.OTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.h6{
+  color: var(--white, #FFF);
+font-family: SF Pro;
+font-size: 12px;
+font-style: normal;
+font-weight: 510;
+line-height: normal;
+}
+
+.sidebar {
+  background: var(--slate950-color);
+}
+
+.sidebar .btn {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  text-transform: capitalize;
+  color: var(--slate-600, #475569);
+  font-family: SF Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  fill: var(--slate-600, #475569);
+}
+
+.sidebar .btn:hover {
+  border-radius: 32px;
+  background: var(--indigo-500, #6366F1);
+  color: white;
+  fill: white;
+}
