@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "SF pro";
+  src: url("../src/dist/fonts/SFPRODISPLAYREGULAR.OTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: SF Pro;
+  font-weight: 400;
+  background: #f1f5f9;
+  overflow-x: hidden;
+}
