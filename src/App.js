@@ -1,14 +1,14 @@
 
 import "./App.css";
-import Sidebar from "./componens/constants/Sidebar";
+import Sidebar from "./components/constants/Sidebar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./componens/views/Home";
-import Welcome from "./componens/views/Welcome";
-import HowItWorks from "./componens/views/HowItWorks";
-import SignIn from "./componens/views/SignIn";
-import SignUp from "./componens/views/SignUp";
-import Demo from "./componens/views/Demo";
-import MyAccount from "./componens/views/MyAccount";
+import Home from "./components/screens/Home";
+import Welcome from "./components/screens/Welcome";
+import HowItWorks from "./components/screens/HowItWorks";
+import SignIn from "./components/screens/SignIn";
+import SignUp from "./components/screens/SignUp";
+import Demo from "./components/screens/Demo";
+import MyAccount from "./components/screens/MyAccount";
 
 
 function App() {

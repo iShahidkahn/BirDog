@@ -13,6 +13,7 @@ p {
   font-weight: 400;
   line-height: 32px;
 }
+
 .h2 {
   color: var(--slate-950, #020617);
   font-family: SF Pro;
@@ -21,6 +22,7 @@ p {
   font-weight: 400;
   line-height: normal;
 }
+
 .h5 {
   color: var(--indigo-500, #6366f1);
   font-family: SF Pro;
@@ -30,6 +32,7 @@ p {
   line-height: normal;
   text-transform: uppercase;
 }
+
 .h6 {
   color: var(--white, #fff);
   font-family: SF Pro;
@@ -57,6 +60,7 @@ p {
   background: var(--indigo-500, #6366f1);
   cursor: pointer;
 }
+
 /* Buttons */
 
 .sidebar {
@@ -92,12 +96,14 @@ p {
   color: white;
   fill: white;
 }
+
 .sidebar .active {
   border-radius: 32px;
   background: var(--indigo-500, #6366f1);
   color: white;
   fill: white;
 }
+
 .list-disc li {
   line-height: 32px;
 }
@@ -133,7 +139,8 @@ p {
 
 .inputField {
   display: flex;
-  padding: 16px 20px;
+  padding: 15px 20px;
+  height: 53px;
   align-items: center;
   gap: 16px;
   align-self: stretch;
@@ -141,7 +148,111 @@ p {
   border: 1px solid var(--slate-200, #e2e8f0);
   background: var(--slate-50, #f8fafc);
 }
+
 .inputField::placeholder {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--indigo-500, #6366f1);
+  min-height: 850px;
+}
+
+.inner-box {
+  height: 645px;
+  width: 530px;
+}
+.inner-box-2 {
+  height: 510px;
+  width: 530px;
+}
+
+/* Custom scrollbar style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e2e8f0;
+  /* Light gray color for the thumb */
+  border-radius: 10px;
+ 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cbd5e0;
+  /* Lighter gray on hover */
+}
+
+.table {
+  box-shadow: none !important;
+}
+
+.table .table-head {
+  padding: 16px;
+  color: var(--slate-950, #020617);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #94a3b8;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  white-space: nowrap;
+  background: #f8fafc;
+  border-radius: 0 !important;
+}
+
+
+.table .table-body {
+  padding: 16px;
+  color: var(--slate-950, #020617);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  white-space: nowrap;
+  box-shadow: none !important;
+}
+
+
+
+.body:nth-child(odd) {
+  background-color: #f8fafc;
+}
+
+.body:nth-child(even) {
+  background-color: white;
+}
+
+.table,
+::before,
+::after {
+  --tw-brightness: none;
+}
+
+.select-btn {
+  display: flex;
+  padding: 17px 20px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 32px;
+  border: 1px solid var(--slate-200, #e2e8f0);
+  background: var(--slate-50, #f8fafc);
   color: var(--slate-950, #020617);
   font-family: SF Pro;
   font-size: 14px;
@@ -149,87 +260,14 @@ p {
   font-weight: 400;
   line-height: normal;
 }
-.sign{
-  display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex: 1 0 0;
-align-self: stretch;
-border-radius: 16px;
-background: var(--indigo-500, #6366F1);
-min-height: 850px
+
+select:not([size]) {
+  background-image: url("./dist/icons/dropdown.svg");
+}
+.select-btn .option {
+  background-color: #fff;
+  color: #333;
+  border-radius: 0;
+  font-size: 14px;
 }
 
-.inner-box{
-  height: 645px ;
-  width: 530px;
-  /* background: red; */
-}
-
-
-/* Custom scrollbar style */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #e2e8f0; /* Light gray color for the thumb */
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #cbd5e0; /* Lighter gray on hover */
-}
-
-/* Make the table scrollable by dragging */
-.scroll-container {
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  cursor: grab; /* Use the grab cursor for dragging */
-}
-
-.scroll-container:active {
-  cursor: grabbing; /* Change to grabbing cursor while dragging */
-}
-.table{
-  box-shadow: none !important;
-}
-
-.table .table-head{
-  padding: 16px;
-  color: var(--slate-950, #020617);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-color: #94A3B8;
-border-bottom: 1px solid #E2E8F0;
-border-right: 1px solid #E2E8F0;
-white-space: nowrap;
-background: #f8fafc;
-}
-.table .table-body{
-  padding: 16px;
-  color: var(--slate-950, #020617);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-border-top: 1px solid #E2E8F0;
-border-right: 1px solid #E2E8F0;
-white-space: nowrap;
-box-shadow: none !important;
-}
-.body:nth-child(odd) {
-  background-color: #f8fafc; /* Set the background color for odd rows */
-}
-.body:nth-child(even) {
-  background-color: white; /* Set the background color for odd rows */
-}
-
-
-.table, ::before, ::after {
-  --tw-brightness: none;}
-
-  

@@ -1,6 +1,6 @@
 import React from 'react'
 import TopBar from '../constants/TopBar'
-import PrimaryButton from '../constants/PrimaryButton'
+import PrimaryButton from '../constants/buttons/PrimaryButton'
 import { Link } from 'react-router-dom'
 
 const HowItWorks = () => {
