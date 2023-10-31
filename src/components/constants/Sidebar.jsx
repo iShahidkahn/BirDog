@@ -41,9 +41,9 @@ const Sidebar = () => {
             <span className="h6">Main Menu</span>
             <li>
               <Link
-                to="/home"
+                to="/"
                 className={`btn ${
-                  currentLocaion.pathname === "/home" ? "active" : ""
+                  currentLocaion.pathname === "/" ? "active" : ""
                 }`}
               >
                 <svg
@@ -164,8 +164,11 @@ const Sidebar = () => {
             </li>
             <li>
               <Link
-                to="/"
-                className="btn flex-1"
+                to="/birdog"
+                
+                className={`btn flex-1 ${
+                    currentLocaion.pathname === "/birdog" ? "active" : ""
+                  }`}
                 style={{
                   border: "1px solid #1E293B",
                   borderRadius: "32px",

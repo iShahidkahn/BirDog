@@ -31,16 +31,15 @@ const Welcome = () => {
             investor uses.
           </li>
           <li>
-            <strong className="font-semibold">Investment Analysis</strong> : The
+            <strong className="font-semibold">Comparable Analysis</strong> : The
             BirDog App performs detailed comparable analysis, comparing target
             properties with similar listings in the area. This helps in
             determining if a property is priced below market value.
           </li>
           <li>
-            <strong className="font-semibold">Investment Analysis</strong> : The
-            BirDog App analyzes each property and takes many variables into
-            account. These variables are entered into the formulas that every
-            investor uses.
+            <strong className="font-semibold">Customized Buy boxes</strong> :
+            Users can save Buy Boxes, alleviating the need to type each entry in
+            manually every time the software is used.
           </li>
         </ul>
       </section>

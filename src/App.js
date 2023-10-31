@@ -18,12 +18,12 @@ function App() {
         <Sidebar />
         <Routes>
           <Route exact path="/" element={<Welcome />} />
-          <Route exact path="/home" element={<Home />} />
           <Route exact path="/how_it_works" element={<HowItWorks />} />
           <Route exact path="/sign_in" element={<SignIn />} />
           <Route exact path="/create_account" element={<SignUp />} />
           <Route exact path="/app_demo" element={<Demo />} />
           <Route exact path="/my_account" element={<MyAccount />} />
+          <Route exact path="/birdog" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
