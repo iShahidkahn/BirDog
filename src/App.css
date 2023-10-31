@@ -271,3 +271,37 @@ select:not([size]) {
   font-size: 14px;
 }
 
+.overflow-y-auto.scroll-none {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.overflow-y-auto.scroll-none::-webkit-scrollbar {
+  width: 0; 
+}
+
+.rehab input{
+  background: #F8FAFC;
+}
+.rehab input::placeholder{
+  color: var(--slate-950, #020617);
+  font-size: 14px;
+  background: #F8FAFC;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.inputField input:focus{
+  outline: none; 
+  outline-offset: none; 
+  --tw-ring-inset: none;
+  --tw-ring-offset-width: none;
+  --tw-ring-offset-color: none;
+  --tw-ring-color: none;
+  --tw-ring-offset-shadow: none;
+  --tw-ring-shadow: none;
+  box-shadow: none; 
+  border-color: none; 
+}
+

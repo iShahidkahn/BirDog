@@ -1,8 +1,8 @@
-import React from 'react';
-import SearchBox from '../constants/SearchBox';
-import Filter from '../constants/Filter';
-import Table from '../constants/Table';
-import PrimaryButton from '../constants/buttons/PrimaryButton';
+import React from "react";
+import SearchBox from "../constants/SearchBox";
+import Filter from "../constants/Filter";
+import Table from "../constants/Table";
+import PrimaryButton from "../constants/buttons/PrimaryButton";
 
 const Demo = () => {
   return (
@@ -21,11 +21,16 @@ const Demo = () => {
             </div>
             <div className="flex flex-wrap justify-between items-center mt-5">
               <div className="flex items-center my-3">
-                <input type="text" placeholder='File Path...' className='inputField w-[275px] placeholder:text-slate-400' style={{ background: "white" }} />
+                <input
+                  type="text"
+                  placeholder="File Path..."
+                  className="inputField w-[275px] placeholder:text-slate-400"
+                  style={{ background: "white" }}
+                />
               </div>
               <div className="flex items-center mt-4 sm:mt-0 gap-3">
-                <PrimaryButton primaryBtn='Download CSV' />
-                <PrimaryButton primaryBtn='Download Word' />
+                <PrimaryButton primaryBtn="Download CSV" />
+                <PrimaryButton primaryBtn="Download Word" />
               </div>
             </div>
           </div>

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const PrimaryButton = (props) => {
-  return (
-    <div className='primary_btn '>
-        {props.primaryBtn}
-    </div>
-  )
-}
+  return <div className="primary_btn ">{props.primaryBtn}</div>;
+};
 
-export default PrimaryButton
+export default PrimaryButton;
