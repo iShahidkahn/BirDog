@@ -177,6 +177,20 @@ p {
   width: 530px;
 }
 
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--indigo-500, #6366f1);
+  /* min-height: 850px; */
+  padding: 60px 0;
+}
+
+
 /* Custom scrollbar style */
 ::-webkit-scrollbar {
   width: 6px;
